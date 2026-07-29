@@ -50,7 +50,8 @@ Prerequisites
   kubectl cluster-info --context kind-lab0
   kubectl get nodes
   ```
-- Evidence: [Evidence/Kubernetes cluster KIND.PNG](Evidence/Kubernetes%20cluster%20KIND.PNG)
+- Evidence: <img width="519" height="81" alt="5  Kubernetes cluster KIND" src="https://github.com/user-attachments/assets/60a25e79-dd62-4e60-95ad-255b7cbfea3a" />
+
 
 6) Install LocalStack (for AWS service emulation)
 - Using pip (recommended in a venv) or Docker image:
@@ -59,7 +60,8 @@ Prerequisites
   localstack --version
   ```
 - Or run via Docker Compose as shown in the guide.
-- Evidence: [Evidence/LocalStack.PNG](Evidence/LocalStack.PNG)
+- Evidence: <img width="1137" height="692" alt="5  LocalStack" src="https://github.com/user-attachments/assets/351abcae-7dc0-4298-aec4-3e0b772d7e13" />
+
 
 7) Install OpenSSL and oathtool
 - OpenSSL (for certs): use Chocolatey or Git for Windows bundles. Example:
@@ -72,8 +74,10 @@ Prerequisites
   choco install oathtool -y
   oathtool --version
   ```
-- Evidence: [Evidence/OpenSSL.PNG](Evidence/OpenSSL.PNG)
-- Evidence: [Evidence/Oathtool.PNG](Evidence/Oathtool.PNG)
+- Evidence: <img width="1137" height="692" alt="5  LocalStack" src="https://github.com/user-attachments/assets/51b1f4a0-7ea7-4d12-b1aa-a181cc9bd567" />
+
+- Evidence: <img width="657" height="157" alt="4  Oathtool" src="https://github.com/user-attachments/assets/246dac83-48c3-4b1f-a747-b577344c179e" />
+
 
 8) One-time / Final checks
 - Ensure all CLIs are on `PATH` and show expected versions:
