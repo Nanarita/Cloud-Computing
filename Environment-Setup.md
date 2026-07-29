@@ -13,7 +13,8 @@ Prerequisites
   ```powershell
   docker --version
   ```
-- Evidence: <img width="351" height="68" alt="1  Docker" src="https://github.com/user-attachments/assets/f8cfa18e-b498-4260-80e9-d9ac5c9fc8eb" />
+- Evidence:
+- <img width="351" height="68" alt="1  Docker" src="https://github.com/user-attachments/assets/f8cfa18e-b498-4260-80e9-d9ac5c9fc8eb" />
 
 
 2) Install AWS CLI v2
@@ -25,7 +26,8 @@ Prerequisites
   ```powershell
   aws --version
   ```
-- Evidence: <img width="624" height="67" alt="2  AWS CLI v2" src="https://github.com/user-attachments/assets/884ae615-60e5-4535-bf21-33d0a6a7e6d9" />
+- Evidence:
+- <img width="624" height="67" alt="2  AWS CLI v2" src="https://github.com/user-attachments/assets/884ae615-60e5-4535-bf21-33d0a6a7e6d9" />
 
 3) Install kubectl
 - Recommended via Chocolatey or curl:
@@ -33,7 +35,8 @@ Prerequisites
   choco install kubernetes-cli -y
   kubectl version --client
   ```
-- Evidence: <img width="266" height="73" alt="3  Kubectl" src="https://github.com/user-attachments/assets/eef7b864-3a05-4f2c-9d50-a6480e9a7303" />
+- Evidence:
+- <img width="266" height="73" alt="3  Kubectl" src="https://github.com/user-attachments/assets/eef7b864-3a05-4f2c-9d50-a6480e9a7303" />
 
 4) Install kind (Kubernetes IN Docker)
 - Download the Windows binary or use Go if available. Example with curl (PowerShell):
@@ -42,7 +45,8 @@ Prerequisites
   Move-Item .\kind.exe C:\Windows\System32\kind.exe
   kind --version
   ```
-- Evidence: <img width="199" height="63" alt="3  Kind" src="https://github.com/user-attachments/assets/c1ac4ac8-205f-4dca-a946-6c2ecfdfeb09" />
+- Evidence:
+- <img width="199" height="63" alt="3  Kind" src="https://github.com/user-attachments/assets/c1ac4ac8-205f-4dca-a946-6c2ecfdfeb09" />
 
 5) Create a local Kubernetes cluster with kind
   ```powershell
@@ -50,7 +54,8 @@ Prerequisites
   kubectl cluster-info --context kind-lab0
   kubectl get nodes
   ```
-- Evidence: <img width="519" height="81" alt="5  Kubernetes cluster KIND" src="https://github.com/user-attachments/assets/60a25e79-dd62-4e60-95ad-255b7cbfea3a" />
+- Evidence:
+- <img width="519" height="81" alt="5  Kubernetes cluster KIND" src="https://github.com/user-attachments/assets/60a25e79-dd62-4e60-95ad-255b7cbfea3a" />
 
 
 6) Install LocalStack (for AWS service emulation)
@@ -60,7 +65,8 @@ Prerequisites
   localstack --version
   ```
 - Or run via Docker Compose as shown in the guide.
-- Evidence: <img width="1137" height="692" alt="5  LocalStack" src="https://github.com/user-attachments/assets/351abcae-7dc0-4298-aec4-3e0b772d7e13" />
+- Evidence:
+- <img width="1137" height="692" alt="5  LocalStack" src="https://github.com/user-attachments/assets/351abcae-7dc0-4298-aec4-3e0b772d7e13" />
 
 
 7) Install OpenSSL and oathtool
@@ -74,9 +80,11 @@ Prerequisites
   choco install oathtool -y
   oathtool --version
   ```
-- Evidence: <img width="1137" height="692" alt="5  LocalStack" src="https://github.com/user-attachments/assets/51b1f4a0-7ea7-4d12-b1aa-a181cc9bd567" />
+- Evidence:
+- <img width="1137" height="692" alt="5  LocalStack" src="https://github.com/user-attachments/assets/51b1f4a0-7ea7-4d12-b1aa-a181cc9bd567" />
 
-- Evidence: <img width="657" height="157" alt="4  Oathtool" src="https://github.com/user-attachments/assets/246dac83-48c3-4b1f-a747-b577344c179e" />
+- Evidence:
+- <img width="657" height="157" alt="4  Oathtool" src="https://github.com/user-attachments/assets/246dac83-48c3-4b1f-a747-b577344c179e" />
 
 
 8) One-time / Final checks
