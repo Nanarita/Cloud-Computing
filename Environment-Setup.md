@@ -12,7 +12,9 @@ Prerequisites
   ```powershell
   docker --version
   ```
-- Evidence: [Evidence/Docker.PNG](Evidence/Docker.PNG)
+- Evidence:
+- <img width="351" height="68" alt="1  Docker" src="https://github.com/user-attachments/assets/f8cfa18e-b498-4260-80e9-d9ac5c9fc8eb" />
+
 
 2) Install AWS CLI v2
 - Download the AWS CLI v2 MSI for Windows and run the installer.
@@ -20,7 +22,8 @@ Prerequisites
   ```powershell
   aws --version
   ```
-- Evidence: [Evidence/AWS CLI v2.PNG](Evidence/AWS%20CLI%20v2.PNG)
+- Evidence:
+- <img width="624" height="67" alt="2  AWS CLI v2" src="https://github.com/user-attachments/assets/884ae615-60e5-4535-bf21-33d0a6a7e6d9" />
 
 3) Install kind and kubectl
 - Download the kind Windows binary or use Go if available. Example with curl (PowerShell):
@@ -34,7 +37,6 @@ Prerequisites
   ```powershell
   kubectl version --client
   ```
-- Evidence: [Evidence/Kind.PNG](Evidence/Kind.PNG)
 - Evidence: [Evidence/Kubectl.PNG](Evidence/Kubectl.PNG)
 
 4) Install OpenSSL and oathtool
@@ -42,12 +44,13 @@ Prerequisites
   ```powershell
   openssl version
   ```
-- Oathtool (for OTP generation): install the Windows build and verify:
+- Evidence: [Evidence/Kind.PNG](Evidence/Kind.PNG)
+
+5) Create a local Kubernetes cluster with kind
   ```powershell
   oathtool --version
   ```
-- Evidence: [Evidence/OpenSSL.PNG](Evidence/OpenSSL.PNG)
-- Evidence: [Evidence/Oathtool.PNG](Evidence/Oathtool.PNG)
+- Evidence: [Evidence/Kubernetes cluster KIND.PNG](Evidence/Kubernetes%20cluster%20KIND.PNG)
 
 5) Start and stop the lab environment
 - Install LocalStack (for AWS service emulation) using pip or Docker:
@@ -56,7 +59,9 @@ Prerequisites
   localstack --version
   ```
 - Or run via Docker Compose as shown in the guide.
-- Evidence: [Evidence/LocalStack.PNG](Evidence/LocalStack.PNG)
+- Evidence:
+- <img width="1137" height="692" alt="5  LocalStack" src="https://github.com/user-attachments/assets/351abcae-7dc0-4298-aec4-3e0b772d7e13" />
+
 
 - Create the Kubernetes cluster with kind
 - Create the cluster:
@@ -65,11 +70,25 @@ Prerequisites
   kubectl cluster-info --context kind-ccse
   kubectl get nodes
   ```
-- Evidence: [Evidence/Kubernetes cluster KIND.PNG](Evidence/Kubernetes%20cluster%20KIND.PNG)
+- Evidence: [Evidence/OpenSSL.PNG](Evidence/OpenSSL.PNG)
+- Evidence: [Evidence/Oathtool.PNG](Evidence/Oathtool.PNG)
 
 6) One-time / Final checks
 - Ensure all CLIs are on `PATH` and show expected versions:
   ```powershell
-  EP='--endpoint-url=http://localhost:4566'
-  aws $EP sts get-caller-identity
+  docker --version; kind --version; kubectl version --client; aws --version; localstack --version
   ```
+- Save screenshots or logs to the `Evidence/` folder; expected example files are:
+  - Evidence/Docker.PNG
+  - Evidence/AWS CLI v2.PNG
+  - Evidence/Kind.PNG
+  - Evidence/Kubectl.PNG
+  - Evidence/Oathtool.PNG
+  - Evidence/OpenSSL.PNG
+  - Evidence/Kubernetes cluster KIND.PNG
+  - Evidence/LocalStack.PNG
+
+Notes and references
+- Follow the full details and any platform-specific flags in the original guide: [IKB42603_Lab0_Environment_Setup_Cheatsheet.pdf](IKB42603_Lab0_Environment_Setup_Cheatsheet.pdf)
+
+If you want, I can open the PDF and extract exact command snippets into this file, or run the verification commands on your machine next.
