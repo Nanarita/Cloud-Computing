@@ -13,7 +13,8 @@ Prerequisites
   ```powershell
   docker --version
   ```
-- Evidence: [Evidence/Docker.PNG](Evidence/Docker.PNG)
+- Evidence: <img width="351" height="68" alt="1  Docker" src="https://github.com/user-attachments/assets/f8cfa18e-b498-4260-80e9-d9ac5c9fc8eb" />
+
 
 2) Install AWS CLI v2
 - Download the AWS CLI v2 MSI for Windows and run the installer, or use Chocolatey:
