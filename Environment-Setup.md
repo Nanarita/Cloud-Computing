@@ -79,17 +79,3 @@ Prerequisites
   ```powershell
   docker --version; kind --version; kubectl version --client; aws --version; localstack --version
   ```
-- Save screenshots or logs to the `Evidence/` folder; expected example files are:
-  - Evidence/Docker.PNG
-  - Evidence/AWS CLI v2.PNG
-  - Evidence/Kind.PNG
-  - Evidence/Kubectl.PNG
-  - Evidence/Oathtool.PNG
-  - Evidence/OpenSSL.PNG
-  - Evidence/Kubernetes cluster KIND.PNG
-  - Evidence/LocalStack.PNG
-
-Notes and references
-- Follow the full details and any platform-specific flags in the original guide: [IKB42603_Lab0_Environment_Setup_Cheatsheet.pdf](IKB42603_Lab0_Environment_Setup_Cheatsheet.pdf)
-
-If you want, I can open the PDF and extract exact command snippets into this file, or run the verification commands on your machine next.
