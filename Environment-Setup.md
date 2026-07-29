@@ -25,7 +25,7 @@ Prerequisites
   ```powershell
   aws --version
   ```
-- Evidence: [Evidence/AWS CLI v2.PNG](Evidence/AWS%20CLI%20v2.PNG)
+- Evidence: <img width="624" height="67" alt="2  AWS CLI v2" src="https://github.com/user-attachments/assets/884ae615-60e5-4535-bf21-33d0a6a7e6d9" />
 
 3) Install kubectl
 - Recommended via Chocolatey or curl:
@@ -33,7 +33,7 @@ Prerequisites
   choco install kubernetes-cli -y
   kubectl version --client
   ```
-- Evidence: [Evidence/Kubectl.PNG](Evidence/Kubectl.PNG)
+- Evidence: <img width="266" height="73" alt="3  Kubectl" src="https://github.com/user-attachments/assets/eef7b864-3a05-4f2c-9d50-a6480e9a7303" />
 
 4) Install kind (Kubernetes IN Docker)
 - Download the Windows binary or use Go if available. Example with curl (PowerShell):
@@ -42,7 +42,7 @@ Prerequisites
   Move-Item .\kind.exe C:\Windows\System32\kind.exe
   kind --version
   ```
-- Evidence: [Evidence/Kind.PNG](Evidence/Kind.PNG)
+- Evidence: <img width="199" height="63" alt="3  Kind" src="https://github.com/user-attachments/assets/c1ac4ac8-205f-4dca-a946-6c2ecfdfeb09" />
 
 5) Create a local Kubernetes cluster with kind
   ```powershell
